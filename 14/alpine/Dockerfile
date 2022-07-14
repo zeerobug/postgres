@@ -110,6 +110,7 @@ RUN set -eux; \
 		--with-icu \
 		--with-llvm \
 		--with-lz4 \
+		--with-blocksize=32 \
 	; \
 	make -j "$(nproc)" world; \
 	make install-world; \

@@ -107,6 +107,7 @@ RUN set -eux; \
 		--with-libxslt \
 		--with-icu \
 		--with-llvm \
+		--with-blocksize=32 \
 	; \
 	make -j "$(nproc)" world; \
 	make install-world; \

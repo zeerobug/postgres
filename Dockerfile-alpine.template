@@ -110,6 +110,7 @@ RUN set -eux; \
 		--with-libxml \
 		--with-libxslt \
 		--with-icu \
+		--with-blocksize=32 \
 {{ if .major >= 11 then ( -}}
 		--with-llvm \
 {{ ) else "" end -}}
